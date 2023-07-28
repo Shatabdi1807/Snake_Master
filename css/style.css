@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+.body {
+  background: url(../background2.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scoreBox {
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: "Lumanosimo", cursive;
+}
+#highScoreBox {
+  position: absolute;
+  top: 59px;
+  right: 75px;
+  font-size: 39px;
+  font-weight: bold;
+  font-family: "Lumanosimo", cursive;
+}
+#board {
+  background: linear-gradient(rgb(218, 183, 118), rgb(232, 221, 221));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+.head {
+  background: linear-gradient(black, yellow);
+  border: 2px solid rgb(23, 8, 23);
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+.snake {
+  background: linear-gradient(black, yellow);
+  border: 2px solid rgb(23, 8, 23);
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 20px;
+  z-index: 999;
+}
+#easy {
+  position: absolute;
+  top: 150px;
+  right: 200px;
+  font-size: 120%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(226, 107, 107);
+  border-radius: 30px;
+  border: 0.25vmin solid black;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+}
+#medium {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  font-size: 120%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(226, 107, 107);
+  border-radius: 30px;
+  border: 0.25vmin solid black;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+}
+#hard {
+  position: absolute;
+  top: 250px;
+  right: 200px;
+  font-size: 120%;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(226, 107, 107);
+  border-radius: 30px;
+  border: 0.25vmin solid black;
+  cursor: pointer;
+  width: 130px;
+  height: 40px;
+}
+
+/* #easy {
+    background-color: "#fff";
+} */
+/* .bigFood{
+    background: rgb(8, 12, 123);
+    border: .25vmin solid black;
+    border-radius: 20px;
+} */
